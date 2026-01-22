@@ -86,7 +86,7 @@ export default function OpenInBrowserHint({ language = "ru" }: Props) {
 
       {/* ✅ Уведомление (без левой иконки вообще) */}
       <div className="fixed top-14 right-3 z-[9999] w-[310px] max-w-[92vw]">
-        <div className="relative rounded-2xl bg-black/80 text-white shadow-lg backdrop-blur px-4 py-3 pr-10">
+        <div className="relative rounded-2xl bg-black/80 text-white shadow-lg backdrop-blur px-4 py-3 pr-10 border-2 border-red-500 ring-2 ring-red-500/40">
           <div className="text-[15px] font-semibold leading-snug">{title}</div>
           <div className="mt-1 text-sm leading-snug">{content}</div>
 
