@@ -6,6 +6,8 @@ import slots from '@/assets/slots.png';
 import blocks from '@/assets/blocks.png';
 import cosmicChest from '@/assets/cosmic-chest.png';
 import progressBar from '@/assets/progress-bar.png';
+import OpenInBrowserHint from '@/components/OpenInBrowserHint';
+
 const translations = {
   ru: { 
     welcome: 'Добро пожаловать в FULLWIN',
@@ -32,6 +34,8 @@ const Index: React.FC = () => {
     <div className="starry-bg min-h-screen w-full overflow-x-hidden flex justify-center">
       {/* Main container - mobile width */}
       <div className="relative w-full max-w-[420px] min-h-screen flex flex-col overflow-visible">
+        {/* TikTok in-app browser hint (top-right) */}
+        <OpenInBrowserHint language={language} />
         
         {/* Language Toggle */}
         <button
